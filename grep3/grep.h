@@ -29,48 +29,6 @@
 #define    WRITE    1
 #define SIZE 10000
 #define BUFSIZE 100
-char    savedfile[FNSIZE];
-char    file[FNSIZE];
-char    linebuf[LBSIZE];
-char    rhsbuf[LBSIZE/2];
-char    expbuf[ESIZE+4];
-int    given;
-unsigned int    *addr1, *addr2;
-unsigned int    *dot, *dol, *zero;
-char    genbuf[LBSIZE];
-long    count;
-char    *nextip;
-char    *linebp;
-int    ninbuf;
-int    io;
-int    pflag;
-int    wait(int *);
-int    oflag;
-int    listf;
-int    listn;
-int    col;
-char    *globp;
-int    tline;
-char    *tfname;
-char    *loc1;
-char    *loc2;
-char    ibuff[BLKSIZE];
-char    obuff[BLKSIZE];
-int    ichanged;
-int    nleft;
-int    names[26];
-int    anymarks;
-char    *braslist[NBRA];
-char    *braelist[NBRA];
-int    nbra;
-int    subnewa;
-int    subolda;
-int    fchange;
-int    wrapp;
-char    line[70];
-char    *mktemp(char *);
-char grepsearchbuf[SIZE];
-char buf[BUFSIZE];
 int getch_(void);
 void ungetch_(int c);
 void search(const char* re);
